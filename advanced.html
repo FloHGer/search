@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Advanced Search</title>
+	<link rel='stylesheet' href='main.css'>
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+</head>
+<body>
+	<ul id='links'>
+		<li><a href='index.html'>Web Search</a></li>
+		<li><a href='images.html'>Image Search</a></li>
+	</ul>
+	<a href='index.html'><img id='advancedlogo' src='logo.png' alt='Google Logo'></a>
+	<h1>Advanced Search</h1>	
+	<form id='advancedform' action='https://google.com/search'>
+		<div id='table'>
+			<div class='tabledata col1'><h2>Find pages with...</h2></div>
+			<div class='tabledata'></div>
+			<div class='tabledata bigscreen'><h2>To do this in the search box.</h2></div>
+			
+			<div class='tabledata col1'>all these words:</div>
+			<div class='tabledata'><input class='advancedinput' type='text' name='as_q'></div>
+			<div class='tabledata bigscreen'>Type the important words: tri-colour rat terrier</div>
+			
+			<div class='tabledata col1'>this exact word or phrase:</div>
+			<div class='tabledata'><input class='advancedinput' type='text' name='as_epq'></div>
+			<div class='tabledata bigscreen'>Put exact words in quotes: "rat terrier"</div>
+			
+			<div class='tabledata col1'>any of these words:</div>
+			<div class='tabledata'><input class='advancedinput' type='text' name='as_oq'></div>
+			<div class='tabledata bigscreen'>Type OR between all the words you want: miniature OR standard</div>
+			
+			<div class='tabledata col1'>none of these words:</div>
+			<div class='tabledata'><input class='advancedinput' type='text' name='as_eq'></div>
+			<div class='tabledata bigscreen'>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
+			
+			<div class='tabledata'></div>
+			<div class='tabledata'><input id='advancedsubmit' type='submit' value='Advanced Search'></div>
+			<div class='tabledata'></div>
+		</div>
+	</form>
+</body>
+</html>

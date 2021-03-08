@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial, sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+}
+#links{
+	text-align: right;
+	padding: 15px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	list-style-type: none;
+}
+#logo{
+	position: relative;
+	display: block;
+	margin: 200px auto auto auto;
+}
+#advancedlogo{
+	margin: 15px;
+	width: 92px;
+}
+#simpleform{
+	text-align: center;
+}
+#searchfield{
+	clear: none;
+	height: 45px;
+	width: 485px;
+	margin: 30px auto 20px auto;
+	font-size: 16px;
+	line-height: 34px;
+	outline: none;
+	border-radius: 30px;
+	border: 1px solid lightgray;
+}
+#searchfield:hover, #searchfield:focus{
+	box-shadow: 0px 0px 5px 1px lightgray;
+}
+.submitbutton{
+	display: inline-flex;
+	padding: 0px 16px 0px 16px;
+	margin: 11px 4px 11px 4px;
+	width: auto;
+	min-width: 54px;
+	height: 36px;
+	border: none;
+	background-color: ghostwhite;
+	line-height: 27px;
+	color: rgb(60 64 67);
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.submitbutton:hover{
+	border: 1px solid black;
+}
+								/* advanced search */
+h1{
+	margin: 20px 0px 45px 45px;
+	font-size: 20px;
+	color: crimson;
+}
+h2{
+	font-size: 16px;
+	margin: 15px 0px 10px 0px;
+}
+.advancedinput{
+	float: right;
+	height: 25px;
+	width: 100%;
+	border: 1px solid #d9d9d9;
+	border-top: 1px solid #c0c0c0;
+}
+.advancedinput:focus{
+	border-color: cornflowerblue;
+}
+.col1{
+	margin-left: 15px;
+}
+.bigscreen{
+	padding-left: 0px;
+	font-size: 11px;
+}
+#advancedsubmit{
+	float: right;
+	color: white;
+	background-color: cornflowerblue;
+	opacity: 0.9;
+	margin: 0;
+	padding: 5px;
+	height: 28px;
+	line-height: 11px;
+	font-size: 11px;
+	font-weight: 700;
+	border: 1px solid cornflowerblue;
+	border-radius: 2px;
+}
+#advancedsubmit:hover{
+	opacity: 1;
+}
+#table{
+	display:grid;
+	align-items: center;
+	text-align: left;
+	grid-template-columns: 180px auto auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 5px;
+	padding: 5px;
+	margin: 50px 5px 5px 25px;
+}
+#table input{
+	margin: 5px;
+	align-content: right;
+}
+.tabledata{
+	font-size: 13px;
+		
+}
+								/* mobile */
+@media screen and (max-width: 1000px){
+	.bigscreen{
+		display: none;
+	}
+	#table{
+		grid-template-columns: 180px auto;
+	}
+}
